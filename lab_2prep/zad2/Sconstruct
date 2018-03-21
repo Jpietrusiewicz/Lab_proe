@@ -1,0 +1,6 @@
+compiler='clang++'
+cppversion='-std=c++11'
+sources =Glob('*.cpp')
+target = 'zadanko.out'
+env=Environment(CXX=compiler,CCFLAGS=cppversion)
+env.Program(target,sources)
